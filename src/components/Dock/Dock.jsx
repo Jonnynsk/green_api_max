@@ -4,15 +4,12 @@ import {
   Phone,
   Settings,
   LogOut,
-  Sparkles,
-  Radio,
 } from "lucide-react";
 import styles from "./styles/index.module.scss";
 
 export default function Dock({
   instanceState,
   onOpenSettings,
-  onOpenNewChat,
   onOpenLogout,
 }) {
   return (
