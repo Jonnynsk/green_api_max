@@ -1,0 +1,62 @@
+// Global variables
+$bg-app: #0f1015;
+$bg-dock: #14151b;
+$bg-sidebar: #171821;
+$bg-chat: #0c0d12;
+$bg-header: #171821;
+$bg-panel: #1e1f2b;
+$border-color: #272836;
+$text-primary: #f8fafc;
+$text-secondary: #94a3b8;
+$accent-purple: #7c3aed;
+$accent-purple-hover: #6d28d9;
+$accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+$msg-out: #8b5cf6;
+$msg-in: #222332;
+$input-bg: #1c1d28;
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #08090d;
+  color: $text-primary;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: none;
+  max-width: none;
+  text-align: left;
+}
+
+.max-app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-app;
+  position: relative;
+  overflow: hidden;
+}
+
+.max-main-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  z-index: 1;
+  background-color: $bg-app;
+  box-sizing: border-box;
+}
