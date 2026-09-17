@@ -1,11 +1,8 @@
 import { useRef, useEffect } from "react";
 import {
-  MessageSquare,
   Send,
   CheckCheck,
-  RefreshCw,
   ShieldCheck,
-  Paperclip,
   Smile,
   Mic,
   User,
@@ -17,8 +14,6 @@ export default function ChatWindow({
   messageInput,
   onMessageInputChange,
   onSendMessage,
-  onSimulateReply,
-  onCheckNewMessages,
 }) {
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
@@ -29,7 +24,7 @@ export default function ChatWindow({
 
   useEffect(() => {
     inputRef.current?.focus();
-  }, []);
+  }, [activeChat]);
 
   if (!activeChat) return null;
 
@@ -55,7 +50,7 @@ export default function ChatWindow({
               style={{ margin: "0 auto 8px", color: "#a78bfa" }}
             />
             <p className={styles.title}>
-              Сообщения защищены сквозным шифрованием в МАКС.
+              Сообщения защищены сквозным шифрованием в MAX.
             </p>
             <p className={styles.sub}>
               Отправьте свое первое текстовое сообщение ниже.
